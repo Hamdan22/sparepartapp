@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+    <TextView
+        android:id="@+id/spareparettitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spareparts DATA"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/sid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:textSize="22dp"
+        android:layout_below="@+id/spareparettitle"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/Prodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/sid"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/prodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:textSize="22dp"
+        android:layout_below="@+id/Prodname"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/prodQunt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quntity"
+        android:textSize="22dp"
+        android:layout_below="@+id/prodPrice"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/bbInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="Insert New Data"
+        android:layout_marginTop="55dp"
+        android:layout_below="@id/prodPrice"/>
+    <Button
+        android:id="@+id/bbUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update Data"
+        android:layout_below="@id/bbInsert"/>
+    <Button
+        android:id="@+id/bbDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Existing Data"
+        android:layout_below="@id/bbUpdate"/>
+    <Button
+        android:id="@+id/bbView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View"
+        android:layout_below="@id/bbDelete"/>
+    <Button
+        android:id="@+id/bbClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Clear"
+        android:layout_below="@id/bbView"/>
+    <Button
+        android:id="@+id/bbHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Home"
+        android:layout_below="@id/bbClear"/>
+
+    <TextView
+        android:id="@+id/txtTotalPrice"
+        android:layout_width="138dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="95dp"
+        android:text="Total Price of the Product" />
+
+    <TextView
+        android:id="@+id/txtvtp"
+        android:layout_width="173dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="92dp"
+        android:text="Total Price" />
+
+
+</RelativeLayout>
